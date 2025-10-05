@@ -14,12 +14,20 @@ html,body{
   -webkit-text-size-adjust:100%;
 }
 
+/* container that stacks buttons vertically */
+.button-stack{
+  display:flex;
+  flex-direction:column;
+  gap:40px; /* space between buttons */
+  align-items:center;
+}
+
 /* outer animated border box */
 .border-wrap{
   position:relative;
   display:inline-block;
   border-radius:14px;
-  padding:3px; /* border thickness */
+  padding:3px;
   background:linear-gradient(90deg,#00ff88,#00ffaa,#16c784,#00ff88);
   background-size:300% 300%;
   animation:borderFlow 3s linear infinite;
@@ -58,8 +66,13 @@ html,body{
 </head>
 <body>
 
-<div class="border-wrap">
-  <a href="https://drugfreeinu.money" class="money-button">drugfreeinu.money</a>
+<div class="button-stack">
+  <div class="border-wrap">
+    <a href="https://drugfreeinu.money" class="money-button">drugfreeinu.money</a>
+  </div>
+  <div class="border-wrap">
+    <a href="https://drugfreeinu.com" class="money-button">drugfreeinu.com</a>
+  </div>
 </div>
 
 </body>
