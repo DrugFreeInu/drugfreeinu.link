@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 html,body{
-  background:#fff;
   height:100%;
   margin:0;
   display:flex;
   justify-content:center;
   align-items:center;
   -webkit-text-size-adjust:100%;
+  background:linear-gradient(to bottom,#cfeeff 0%,#a7d8ff 40%,#6da7f7 100%);
+  /* soft melted sky-to-deep gradient */
 }
 
 .button-stack{
@@ -33,13 +34,13 @@ html,body{
   display:inline-flex;
   justify-content:center;
   align-items:center;
-  color:#fff;
+  color:#000;
   font-weight:900;
   font-size:2.2rem;
   text-decoration:none;
   border-radius:12px;
   box-shadow:0 4px 12px rgba(0,0,0,.25);
-  transition:none; /* no animation on tap */
+  transition:none;
   text-transform:lowercase;
   line-height:1;
   padding:10px 25px;
@@ -47,8 +48,8 @@ html,body{
 }
 .money-button:hover,
 .money-button:active{
-  transform:none;          /* no lift */
-  box-shadow:0 4px 12px rgba(0,0,0,.25); /* stays same */
+  transform:none;
+  box-shadow:0 4px 12px rgba(0,0,0,.25);
 }
 
 /* GREEN version (.money) */
@@ -61,6 +62,7 @@ html,body{
 }
 .border-wrap.green .money-button{
   background:linear-gradient(135deg,#16c784,#0b8a56);
+  color:#fff;
 }
 
 /* PURPLE version (.com) */
@@ -73,6 +75,21 @@ html,body{
 }
 .border-wrap.purple .money-button{
   background:linear-gradient(135deg,#a54eff,#6a30ff);
+  color:#fff;
+}
+
+/* WHITE version (.church) */
+.border-wrap.white{
+  background:linear-gradient(90deg,#f0f0f0,#ffffff,#dcdcdc,#f0f0f0);
+  background-size:300% 300%;
+  animation:borderFlow 2.2s linear infinite;
+  border-radius:14px;
+  padding:3px;
+}
+.border-wrap.white .money-button{
+  background:linear-gradient(135deg,#fffbe6,#ffffff);
+  color:#000;
+  box-shadow:0 0 20px rgba(255,255,255,0.8), 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Responsive scaling for smaller phones */
@@ -95,6 +112,9 @@ html,body{
   </div>
   <div class="border-wrap purple">
     <a href="https://drugfreeinu.com" class="money-button" rel="noopener noreferrer">drugfreeinu.com</a>
+  </div>
+  <div class="border-wrap white">
+    <a href="https://drugfreeinu.church" class="money-button" rel="noopener noreferrer">drugfreeinu.church</a>
   </div>
 </div>
 
