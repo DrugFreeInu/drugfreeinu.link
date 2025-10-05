@@ -1,6 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body {
-  background: #000;
+  background: #fff; /* white background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,18 +15,23 @@ body {
 
 .money-button {
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* keeps text near the top */
   background: linear-gradient(135deg, #16c784, #0b8a56);
   color: white;
-  font-weight: bold;
-  font-size: 1.6rem; /* bigger text */
+  font-weight: 900;
+  font-size: 3.5rem;
   text-decoration: none;
-  padding: 20px 50px; /* larger button */
+  padding: 10px 35px;
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
   z-index: 0;
+  text-transform: lowercase;
+  line-height: 1;
+  padding-top: 4px;
 }
 
 .money-button::before {
@@ -33,8 +43,8 @@ body {
   background: linear-gradient(90deg, #00ff88, #00ffaa, #16c784, #00ff88);
   background-size: 300% 300%;
   animation: borderFlow 3s linear infinite;
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
@@ -52,5 +62,10 @@ body {
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 </style>
+</head>
+<body>
 
 <a href="https://drugfreeinu.money" class="money-button">drugfreeinu.money</a>
+
+</body>
+</html>
