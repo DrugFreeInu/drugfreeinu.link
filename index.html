@@ -21,7 +21,7 @@ body {
   background: linear-gradient(135deg, #16c784, #0b8a56);
   color: white;
   font-weight: 900;
-  font-size: clamp(1.8rem, 5vw, 3rem); /* resizes on mobile */
+  font-size: 3rem;
   text-decoration: none;
   border-radius: 14px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
@@ -30,9 +30,8 @@ body {
   z-index: 0;
   text-transform: lowercase;
   line-height: 1;
-  padding: 15px 25px;
-  width: min(90%, 600px); /* prevents horizontal stretching */
-  text-align: center;
+  padding: 10px 15px; /* much tighter horizontally */
+  width: fit-content; /* shrink-wrap text */
   white-space: nowrap;
 }
 
