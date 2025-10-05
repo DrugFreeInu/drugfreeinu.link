@@ -14,37 +14,25 @@ html,body{
   -webkit-text-size-adjust:100%;
 }
 
-/* container that stacks buttons vertically */
 .button-stack{
   display:flex;
   flex-direction:column;
-  gap:40px; /* space between buttons */
+  gap:40px;
   align-items:center;
 }
 
-/* outer animated border box */
-.border-wrap{
-  position:relative;
-  display:inline-block;
-  border-radius:14px;
-  padding:3px;
-  background:linear-gradient(90deg,#00ff88,#00ffaa,#16c784,#00ff88);
-  background-size:300% 300%;
-  animation:borderFlow 3s linear infinite;
-}
-
+/* shared border animation */
 @keyframes borderFlow{
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
 
-/* actual button inside */
+/* base button style */
 .money-button{
   display:inline-flex;
   justify-content:center;
   align-items:center;
-  background:linear-gradient(135deg,#16c784,#0b8a56);
   color:#fff;
   font-weight:900;
   font-size:2.2rem;
@@ -57,20 +45,43 @@ html,body{
   padding:10px 25px;
   white-space:nowrap;
 }
-
 .money-button:hover{
   transform:translateY(-2px);
   box-shadow:0 6px 14px rgba(0,0,0,.35);
+}
+
+/* GREEN version (.money) */
+.border-wrap.green{
+  background:linear-gradient(90deg,#00ff88,#00ffaa,#16c784,#00ff88);
+  background-size:300% 300%;
+  animation:borderFlow 3s linear infinite;
+  border-radius:14px;
+  padding:3px;
+}
+.border-wrap.green .money-button{
+  background:linear-gradient(135deg,#16c784,#0b8a56);
+}
+
+/* PURPLE version (.com) */
+.border-wrap.purple{
+  background:linear-gradient(90deg,#b14eff,#9d4dff,#7a32ff,#b14eff);
+  background-size:300% 300%;
+  animation:borderFlow 3s linear infinite;
+  border-radius:14px;
+  padding:3px;
+}
+.border-wrap.purple .money-button{
+  background:linear-gradient(135deg,#a54eff,#6a30ff);
 }
 </style>
 </head>
 <body>
 
 <div class="button-stack">
-  <div class="border-wrap">
+  <div class="border-wrap green">
     <a href="https://drugfreeinu.money" class="money-button">drugfreeinu.money</a>
   </div>
-  <div class="border-wrap">
+  <div class="border-wrap purple">
     <a href="https://drugfreeinu.com" class="money-button">drugfreeinu.com</a>
   </div>
 </div>
