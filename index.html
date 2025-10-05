@@ -1,15 +1,24 @@
 <style>
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
 .money-button {
   position: relative;
   display: inline-block;
   background: linear-gradient(135deg, #16c784, #0b8a56);
   color: white;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.6rem; /* bigger text */
   text-decoration: none;
-  padding: 12px 28px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  padding: 20px 50px; /* larger button */
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
   z-index: 0;
@@ -19,8 +28,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 10px;
-  padding: 2px;
+  border-radius: 14px;
+  padding: 3px;
   background: linear-gradient(90deg, #00ff88, #00ffaa, #16c784, #00ff88);
   background-size: 300% 300%;
   animation: borderFlow 3s linear infinite;
@@ -39,8 +48,8 @@
 }
 
 .money-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 </style>
 
