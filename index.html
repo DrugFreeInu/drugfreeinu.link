@@ -12,7 +12,6 @@ html,body{
   align-items:center;
   -webkit-text-size-adjust:100%;
   background:linear-gradient(to bottom,#cfeeff 0%,#a7d8ff 40%,#6da7f7 100%);
-  /* soft melted sky-to-deep gradient */
 }
 
 .button-stack{
@@ -39,19 +38,13 @@ html,body{
   text-decoration:none;
   border-radius:12px;
   box-shadow:0 4px 12px rgba(0,0,0,.25);
-  transition:none;
   text-transform:lowercase;
   line-height:1;
   padding:10px 25px;
   white-space:nowrap;
 }
-.money-button:hover,
-.money-button:active{
-  transform:none;
-  box-shadow:0 4px 12px rgba(0,0,0,.25);
-}
 
-/* GREEN version (.money) */
+/* GREEN */
 .border-wrap.green{
   background:linear-gradient(90deg,#00ff88,#00ffaa,#16c784,#00ff88);
   background-size:300% 300%;
@@ -64,7 +57,7 @@ html,body{
   color:#fff;
 }
 
-/* PURPLE version (.com) */
+/* PURPLE */
 .border-wrap.purple{
   background:linear-gradient(90deg,#b14eff,#9d4dff,#7a32ff,#b14eff);
   background-size:300% 300%;
@@ -77,7 +70,7 @@ html,body{
   color:#fff;
 }
 
-/* WHITE version (.church) */
+/* WHITE */
 .border-wrap.white{
   background:linear-gradient(90deg,#f0f0f0,#ffffff,#dcdcdc,#f0f0f0);
   background-size:300% 300%;
@@ -91,14 +84,15 @@ html,body{
   box-shadow:0 0 20px rgba(255,255,255,0.8), 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* YELLOW version (DFI core) — refined hierarchy */
+/* YELLOW — stock Photoshop yellow border, soft animation */
 .border-wrap.yellow{
   background:linear-gradient(
     90deg,
-    #c99700,
-    #e0b400,
-    #9f7a00,
-    #c99700
+    #ffe600,
+    #ffff00,
+    #ffd400,
+    #ffff00,
+    #ffe600
   );
   background-size:300% 300%;
   animation:borderFlow 3s linear infinite;
@@ -113,11 +107,11 @@ html,body{
   );
   color:#000;
   box-shadow:
-    0 0 14px rgba(255,215,0,0.35),
+    0 0 12px rgba(255,230,0,0.35),
     0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* Responsive scaling for smaller phones */
+/* Responsive */
 @media (max-width: 400px){
   .money-button{
     font-size:1.6rem;
@@ -138,21 +132,15 @@ html,body{
   </div>
 
   <div class="border-wrap green">
-    <a href="https://drugfreeinu.money" class="money-button" rel="noopener noreferrer">
-      drugfreeinu.money
-    </a>
+    <a href="https://drugfreeinu.money" class="money-button">drugfreeinu.money</a>
   </div>
 
   <div class="border-wrap purple">
-    <a href="https://drugfreeinu.com" class="money-button" rel="noopener noreferrer">
-      drugfreeinu.com
-    </a>
+    <a href="https://drugfreeinu.com" class="money-button">drugfreeinu.com</a>
   </div>
 
   <div class="border-wrap white">
-    <a href="https://drugfreeinu.church" class="money-button" rel="noopener noreferrer">
-      drugfreeinu.church
-    </a>
+    <a href="https://drugfreeinu.church" class="money-button">drugfreeinu.church</a>
   </div>
 
 </div>
