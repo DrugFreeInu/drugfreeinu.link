@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
 html,body{
   height:100%;
@@ -28,7 +29,54 @@ html,body{
   100%{background-position:0% 50%}
 }
 
-/* base button style */
+/* ======================
+   RAINBOW TEXT BUTTON
+====================== */
+.border-wrap.rainbow{
+  background:linear-gradient(
+    90deg,
+    #eeeeee,
+    #f7bfd8,
+    #f6de8f,
+    #d4f1c3,
+    #c3e9f9,
+    #d2c9fb,
+    #eeeeee
+  );
+  background-size:300% 300%;
+  animation:borderFlow 3s linear infinite;
+  border-radius:14px;
+  padding:3px;
+}
+
+.border-wrap.rainbow .money-button{
+  background:white;
+  box-shadow:
+    0 0 18px rgba(255,255,255,0.75),
+    0 4px 12px rgba(0,0,0,0.15);
+}
+
+.border-wrap.rainbow .money-button span{
+  background:linear-gradient(
+    90deg,
+    #dcdcdc,
+    #f1a7c6,
+    #f2d16b,
+    #bfe8a8,
+    #a8dbf0,
+    #b9adf2,
+    #dcdcdc
+  );
+  background-size:300% 300%;
+  animation:borderFlow 8s linear infinite;
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+
+/* ======================
+   BASE BUTTON
+====================== */
 .money-button{
   display:inline-flex;
   justify-content:center;
@@ -37,11 +85,11 @@ html,body{
   font-size:2.2rem;
   text-decoration:none;
   border-radius:12px;
-  box-shadow:0 4px 12px rgba(0,0,0,.25);
   text-transform:lowercase;
   line-height:1;
   padding:10px 25px;
   white-space:nowrap;
+  box-shadow:0 4px 12px rgba(0,0,0,.25);
 }
 
 /* GREEN */
@@ -86,14 +134,7 @@ html,body{
 
 /* YELLOW */
 .border-wrap.yellow{
-  background:linear-gradient(
-    90deg,
-    #ffe600,
-    #ffff00,
-    #ffd400,
-    #ffff00,
-    #ffe600
-  );
+  background:linear-gradient(90deg,#ffe600,#ffff00,#ffd400,#ffff00,#ffe600);
   background-size:300% 300%;
   animation:borderFlow 3s linear infinite;
   border-radius:14px;
@@ -105,7 +146,7 @@ html,body{
   box-shadow:0 0 12px rgba(255,230,0,0.35), 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* PINK (EchoJ) — warmed again (less purple) */
+/* PINK */
 .border-wrap.pink{
   background:linear-gradient(
     90deg,
@@ -121,7 +162,6 @@ html,body{
   padding:3px;
 }
 .border-wrap.pink .money-button{
-  /* subtle left-half vibrance boost + original fill */
   background:
     linear-gradient(90deg,
       rgba(255, 60, 140, 0.22) 0%,
@@ -136,7 +176,7 @@ html,body{
 }
 
 /* Responsive */
-@media (max-width: 400px){
+@media (max-width:400px){
   .money-button{
     font-size:1.6rem;
     padding:8px 18px;
@@ -147,11 +187,19 @@ html,body{
 }
 </style>
 </head>
+
 <body>
 
 <div class="button-stack">
 
-  <!-- PINK TOP -->
+  <!-- RAINBOW TOP -->
+  <div class="border-wrap rainbow">
+    <a href="#" class="money-button">
+      <span>2much2live4</span>
+    </a>
+  </div>
+
+  <!-- PINK -->
   <div class="border-wrap pink">
     <a href="#" class="money-button">EchoJr.website</a>
   </div>
