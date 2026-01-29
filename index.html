@@ -49,7 +49,6 @@ html,body{
 
 /* ======================
    TURQUOISE (DFI.supply)
-   DEEPER BLUE PUSH
 ====================== */
 .border-wrap.turquoise{
   background:linear-gradient(
@@ -67,11 +66,21 @@ html,body{
 }
 
 .border-wrap.turquoise .money-button{
-  background:linear-gradient(
-    135deg,
-    #58b8f2,
-    #2a84b8
-  );
+  background:
+    /* LEFT-SIDE TURQUOISE MIX */
+    linear-gradient(
+      90deg,
+      rgba(80, 190, 210, 0.45) 0%,
+      rgba(80, 190, 210, 0.25) 28%,
+      rgba(80, 190, 210, 0.00) 60%
+    ),
+    /* BASE FILL */
+    linear-gradient(
+      135deg,
+      #58b8f2,
+      #2a84b8
+    );
+
   color:#041e2a;
   box-shadow:
     0 0 18px rgba(80,160,230,0.55),
