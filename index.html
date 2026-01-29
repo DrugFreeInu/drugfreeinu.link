@@ -84,7 +84,7 @@ html,body{
   box-shadow:0 0 20px rgba(255,255,255,0.8), 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* YELLOW — stock Photoshop yellow border, soft animation */
+/* YELLOW */
 .border-wrap.yellow{
   background:linear-gradient(
     90deg,
@@ -100,14 +100,35 @@ html,body{
   padding:3px;
 }
 .border-wrap.yellow .money-button{
+  background:linear-gradient(135deg,#fff3b0,#ffe066);
+  color:#000;
+  box-shadow:0 0 12px rgba(255,230,0,0.35), 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* PINK */
+.border-wrap.pink{
+  background:linear-gradient(
+    90deg,
+    #ff7abf,
+    #ff9ad5,
+    #ff5fa2,
+    #ff9ad5,
+    #ff7abf
+  );
+  background-size:300% 300%;
+  animation:borderFlow 3s linear infinite;
+  border-radius:14px;
+  padding:3px;
+}
+.border-wrap.pink .money-button{
   background:linear-gradient(
     135deg,
-    #fff3b0,
-    #ffe066
+    #ffd1e8,
+    #ff9fcf
   );
   color:#000;
   box-shadow:
-    0 0 12px rgba(255,230,0,0.35),
+    0 0 12px rgba(255,120,190,0.35),
     0 4px 12px rgba(0,0,0,0.2);
 }
 
@@ -129,6 +150,10 @@ html,body{
 
   <div class="border-wrap yellow">
     <a href="#" class="money-button">ai.flowers</a>
+  </div>
+
+  <div class="border-wrap pink">
+    <a href="#" class="money-button">EchoJr.website</a>
   </div>
 
   <div class="border-wrap green">
