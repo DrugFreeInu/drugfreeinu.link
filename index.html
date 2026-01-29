@@ -48,6 +48,32 @@ html,body{
 }
 
 /* ======================
+   TURQUOISE (DFI.supply)
+====================== */
+.border-wrap.turquoise{
+  background:linear-gradient(
+    90deg,
+    #4fffe1,
+    #2de0c8,
+    #1fb6a6,
+    #2de0c8,
+    #4fffe1
+  );
+  background-size:300% 300%;
+  animation:borderFlow 3.2s linear infinite;
+  border-radius:14px;
+  padding:3px;
+}
+
+.border-wrap.turquoise .money-button{
+  background:linear-gradient(135deg,#5fffe8,#18c7b4);
+  color:#003a36;
+  box-shadow:
+    0 0 14px rgba(80,255,230,0.45),
+    0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ======================
    RAINBOW TEXT BUTTON
 ====================== */
 .border-wrap.rainbow{
@@ -191,6 +217,11 @@ html,body{
 <body>
 
 <div class="button-stack">
+
+  <!-- TURQUOISE TOP -->
+  <div class="border-wrap turquoise">
+    <a href="#" class="money-button">DFI.supply</a>
+  </div>
 
   <div class="border-wrap pink">
     <a href="#" class="money-button">EchoJr.website</a>
