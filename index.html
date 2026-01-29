@@ -102,20 +102,18 @@ html,body{
 .border-wrap.yellow .money-button{
   background:linear-gradient(135deg,#fff3b0,#ffe066);
   color:#000;
-  box-shadow:
-    0 0 12px rgba(255,230,0,0.35),
-    0 4px 12px rgba(0,0,0,0.2);
+  box-shadow:0 0 12px rgba(255,230,0,0.35), 0 4px 12px rgba(0,0,0,0.2);
 }
 
-/* PINK — EchoJ OG (deep magenta, controlled) */
+/* PINK (EchoJ) — warmed again (less purple) */
 .border-wrap.pink{
   background:linear-gradient(
     90deg,
-    #ff7abf,
-    #ff9ad5,
-    #ff5fa2,
-    #ff9ad5,
-    #ff7abf
+    #ff6aa6,
+    #ff9fd7,
+    #ff3a85,
+    #ff9fd7,
+    #ff6aa6
   );
   background-size:300% 300%;
   animation:borderFlow 3s linear infinite;
@@ -123,39 +121,18 @@ html,body{
   padding:3px;
 }
 .border-wrap.pink .money-button{
-  background:linear-gradient(
-    135deg,
-    #c2185b,   /* deep magenta */
-    #e91e63,   /* softened pink */
-    #f48fb1    /* calm lift */
-  );
+  /* subtle left-half vibrance boost + original fill */
+  background:
+    linear-gradient(90deg,
+      rgba(255, 60, 140, 0.22) 0%,
+      rgba(255, 60, 140, 0.12) 28%,
+      rgba(255, 60, 140, 0.00) 60%
+    ),
+    linear-gradient(135deg,#ff79b3,#ff4aa0);
   color:#fff;
   box-shadow:
-    0 0 10px rgba(233,30,99,0.35),
+    0 0 12px rgba(255,120,190,0.35),
     0 4px 12px rgba(0,0,0,0.25);
-}
-
-/* BROWN */
-.border-wrap.brown{
-  background:linear-gradient(
-    90deg,
-    #8b5a2b,
-    #a06a3a,
-    #6f451f,
-    #a06a3a,
-    #8b5a2b
-  );
-  background-size:300% 300%;
-  animation:borderFlow 3s linear infinite;
-  border-radius:14px;
-  padding:3px;
-}
-.border-wrap.brown .money-button{
-  background:linear-gradient(135deg,#e6d3b1,#d2b48c);
-  color:#000;
-  box-shadow:
-    0 0 8px rgba(139,90,43,0.25),
-    0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Responsive */
@@ -174,26 +151,27 @@ html,body{
 
 <div class="button-stack">
 
+  <!-- PINK TOP -->
   <div class="border-wrap pink">
     <a href="#" class="money-button">EchoJr.website</a>
   </div>
 
+  <!-- YELLOW -->
   <div class="border-wrap yellow">
     <a href="#" class="money-button">ai.flowers</a>
   </div>
 
-  <div class="border-wrap brown">
-    <a href="#" class="money-button">cardboard</a>
-  </div>
-
+  <!-- GREEN -->
   <div class="border-wrap green">
     <a href="https://drugfreeinu.money" class="money-button">drugfreeinu.money</a>
   </div>
 
+  <!-- PURPLE -->
   <div class="border-wrap purple">
     <a href="https://drugfreeinu.com" class="money-button">drugfreeinu.com</a>
   </div>
 
+  <!-- WHITE -->
   <div class="border-wrap white">
     <a href="https://drugfreeinu.church" class="money-button">drugfreeinu.church</a>
   </div>
