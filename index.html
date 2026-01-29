@@ -91,18 +91,30 @@ html,body{
   box-shadow:0 0 20px rgba(255,255,255,0.8), 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* YELLOW version (DFI core) */
+/* YELLOW version (DFI core) — refined hierarchy */
 .border-wrap.yellow{
-  background:linear-gradient(90deg,#ffd84d,#ffea70,#f5c400,#ffd84d);
+  background:linear-gradient(
+    90deg,
+    #c99700,
+    #e0b400,
+    #9f7a00,
+    #c99700
+  );
   background-size:300% 300%;
   animation:borderFlow 3s linear infinite;
   border-radius:14px;
   padding:3px;
 }
 .border-wrap.yellow .money-button{
-  background:linear-gradient(135deg,#ffde59,#f5c400);
+  background:linear-gradient(
+    135deg,
+    #fff3b0,
+    #ffe066
+  );
   color:#000;
-  box-shadow:0 0 18px rgba(255,215,0,0.6), 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow:
+    0 0 14px rgba(255,215,0,0.35),
+    0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Responsive scaling for smaller phones */
