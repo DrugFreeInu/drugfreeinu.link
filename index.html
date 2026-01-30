@@ -62,7 +62,6 @@ html,body{
     linear-gradient(90deg,rgba(80,190,210,.45) 0%,rgba(80,190,210,.25) 28%,rgba(80,190,210,0) 60%),
     linear-gradient(135deg,#58b8f2,#2a84b8);
   color:#041e2a;
-  box-shadow:0 0 18px rgba(80,160,230,.55),0 4px 12px rgba(0,0,0,.22);
 }
 
 /* ======================
@@ -143,34 +142,39 @@ html,body{
 }
 
 /* ======================
-   OD PRODUCTIONS (FULL WHITE GLOW)
+   OD PRODUCTIONS (CLEAN FLOW)
 ====================== */
 .border-wrap.od{
-  background:#ffffff;
-  border-radius:16px;
+  background:linear-gradient(
+    90deg,
+    #ffffff,
+    #e6e6e6,
+    #ffffff
+  );
+  background-size:300% 300%;
+  animation:borderFlow 4s linear infinite;
+  border-radius:14px;
   padding:3px;
-  box-shadow:
-    0 0 18px rgba(255,255,255,.9),
-    0 0 36px rgba(255,255,255,.6),
-    0 0 60px rgba(255,255,255,.35);
 }
 
 .border-wrap.od .money-button{
   background:
     linear-gradient(
+      90deg,
+      rgba(255,255,255,0.10) 0%,
+      rgba(255,255,255,0.04) 30%,
+      rgba(255,255,255,0.00) 60%
+    ),
+    linear-gradient(
       135deg,
-      #000000 0%,
-      #111111 35%,
-      #2a2a2a 55%,
-      #e6e6e6 85%,
-      #ffffff 100%
+      #000000,
+      #121212,
+      #1e1e1e,
+      #2a2a2a
     );
-  color:#000;
+  color:#ffffff;
   font-weight:800;
   letter-spacing:0.02em;
-  box-shadow:
-    inset 0 0 18px rgba(255,255,255,.15),
-    0 6px 18px rgba(0,0,0,.6);
 }
 
 /* ======================
