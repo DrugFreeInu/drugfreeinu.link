@@ -48,55 +48,28 @@ html,body{
 }
 
 /* ======================
-   TURQUOISE (DFI.supply)
+   TURQUOISE
 ====================== */
 .border-wrap.turquoise{
-  background:linear-gradient(
-    90deg,
-    #3fa8e6,
-    #2f8fc9,
-    #2676aa,
-    #2f8fc9,
-    #3fa8e6
-  );
+  background:linear-gradient(90deg,#3fa8e6,#2f8fc9,#2676aa,#2f8fc9,#3fa8e6);
   background-size:300% 300%;
   animation:borderFlow 3.2s linear infinite;
   border-radius:14px;
   padding:3px;
 }
-
 .border-wrap.turquoise .money-button{
   background:
-    linear-gradient(
-      90deg,
-      rgba(80, 190, 210, 0.45) 0%,
-      rgba(80, 190, 210, 0.25) 28%,
-      rgba(80, 190, 210, 0.00) 60%
-    ),
-    linear-gradient(
-      135deg,
-      #58b8f2,
-      #2a84b8
-    );
-
+    linear-gradient(90deg,rgba(80,190,210,.45) 0%,rgba(80,190,210,.25) 28%,rgba(80,190,210,0) 60%),
+    linear-gradient(135deg,#58b8f2,#2a84b8);
   color:#041e2a;
-  box-shadow:
-    0 0 18px rgba(80,160,230,0.55),
-    0 4px 12px rgba(0,0,0,0.22);
+  box-shadow:0 0 18px rgba(80,160,230,.55),0 4px 12px rgba(0,0,0,.22);
 }
 
 /* ======================
-   PINK (Echo Jr)
+   PINK
 ====================== */
 .border-wrap.pink{
-  background:linear-gradient(
-    90deg,
-    #ff6aa6,
-    #ff9fd7,
-    #ff3a85,
-    #ff9fd7,
-    #ff6aa6
-  );
+  background:linear-gradient(90deg,#ff6aa6,#ff9fd7,#ff3a85,#ff9fd7,#ff6aa6);
   background-size:300% 300%;
   animation:borderFlow 3s linear infinite;
   border-radius:14px;
@@ -104,16 +77,9 @@ html,body{
 }
 .border-wrap.pink .money-button{
   background:
-    linear-gradient(90deg,
-      rgba(255, 60, 140, 0.22) 0%,
-      rgba(255, 60, 140, 0.12) 28%,
-      rgba(255, 60, 140, 0.00) 60%
-    ),
+    linear-gradient(90deg,rgba(255,60,140,.22) 0%,rgba(255,60,140,.12) 28%,rgba(255,60,140,0) 60%),
     linear-gradient(135deg,#ff79b3,#ff4aa0);
   color:#fff;
-  box-shadow:
-    0 0 12px rgba(255,120,190,0.35),
-    0 4px 12px rgba(0,0,0,0.25);
 }
 
 /* ======================
@@ -129,7 +95,6 @@ html,body{
 .border-wrap.yellow .money-button{
   background:linear-gradient(135deg,#fff3b0,#ffe066);
   color:#000;
-  box-shadow:0 0 12px rgba(255,230,0,0.35), 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* ======================
@@ -175,86 +140,54 @@ html,body{
 .border-wrap.white .money-button{
   background:linear-gradient(135deg,#fffbe6,#ffffff);
   color:#000;
-  box-shadow:0 0 20px rgba(255,255,255,0.8), 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* ======================
-   OD PRODUCTIONS (BACKSTAGE)
+   OD PRODUCTIONS (FULL WHITE GLOW)
 ====================== */
 .border-wrap.od{
-  background:linear-gradient(
-    90deg,
-    #ffffff,
-    #dcdcdc,
-    #ffffff
-  );
-  background-size:300% 300%;
-  animation:borderFlow 4s linear infinite;
-  border-radius:14px;
-  padding:2px;
+  background:#ffffff;
+  border-radius:16px;
+  padding:3px;
+  box-shadow:
+    0 0 18px rgba(255,255,255,.9),
+    0 0 36px rgba(255,255,255,.6),
+    0 0 60px rgba(255,255,255,.35);
 }
 
 .border-wrap.od .money-button{
   background:
     linear-gradient(
-      90deg,
-      rgba(255,255,255,0.08) 0%,
-      rgba(255,255,255,0.03) 35%,
-      rgba(0,0,0,0.0) 65%
-    ),
-    linear-gradient(
       135deg,
-      #000000,
-      #0b0b0b
+      #000000 0%,
+      #111111 35%,
+      #2a2a2a 55%,
+      #e6e6e6 85%,
+      #ffffff 100%
     );
-
-  color:#ffffff;
+  color:#000;
   font-weight:800;
   letter-spacing:0.02em;
-
   box-shadow:
-    0 0 10px rgba(255,255,255,0.15),
-    0 6px 16px rgba(0,0,0,0.6);
+    inset 0 0 18px rgba(255,255,255,.15),
+    0 6px 18px rgba(0,0,0,.6);
 }
 
 /* ======================
    RAINBOW
 ====================== */
 .border-wrap.rainbow{
-  background:linear-gradient(
-    90deg,
-    #eeeeee,
-    #f7bfd8,
-    #f6de8f,
-    #d4f1c3,
-    #c3e9f9,
-    #d2c9fb,
-    #eeeeee
-  );
+  background:linear-gradient(90deg,#eeeeee,#f7bfd8,#f6de8f,#d4f1c3,#c3e9f9,#d2c9fb,#eeeeee);
   background-size:300% 300%;
   animation:borderFlow 3s linear infinite;
   border-radius:14px;
   padding:3px;
 }
-
 .border-wrap.rainbow .money-button{
   background:white;
-  box-shadow:
-    0 0 18px rgba(255,255,255,0.75),
-    0 4px 12px rgba(0,0,0,0.15);
 }
-
 .border-wrap.rainbow .money-button span{
-  background:linear-gradient(
-    90deg,
-    #dcdcdc,
-    #f1a7c6,
-    #f2d16b,
-    #bfe8a8,
-    #a8dbf0,
-    #b9adf2,
-    #dcdcdc
-  );
+  background:linear-gradient(90deg,#dcdcdc,#f1a7c6,#f2d16b,#bfe8a8,#a8dbf0,#b9adf2,#dcdcdc);
   background-size:300% 300%;
   animation:borderFlow 8s linear infinite;
   -webkit-background-clip:text;
@@ -303,15 +236,13 @@ html,body{
     <a href="https://drugfreeinu.church" class="money-button">drugfreeinu.church</a>
   </div>
 
-  <!-- OD PRODUCTIONS (BACKSTAGE) -->
+  <!-- OD PRODUCTIONS -->
   <div class="border-wrap od">
     <a href="https://od.productions" class="money-button">od.productions</a>
   </div>
 
   <div class="border-wrap rainbow">
-    <a href="#" class="money-button">
-      <span>2much2live4</span>
-    </a>
+    <a href="#" class="money-button"><span>2much2live4</span></a>
   </div>
 
 </div>
